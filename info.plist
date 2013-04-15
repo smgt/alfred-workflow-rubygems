@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.smgt.rubygems</string>
+	<key>connections</key>
+	<dict>
+		<key>965D6CE3-7007-4BBC-9E27-22CB258D9C5E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1F95186C-B884-4362-9728-0DFDAE890F51</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Simon Gate</string>
+	<key>description</key>
+	<string>Search for ruby gems</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Search Rubygems.org</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>32</integer>
+				<key>keyword</key>
+				<string>gem</string>
+				<key>runningsubtext</key>
+				<string>Searching ruby gems...</string>
+				<key>script</key>
+				<string>ruby query.rb "{query}" 2&gt; ~/rubygems.log</string>
+				<key>subtext</key>
+				<string>Enter query to find a gem...</string>
+				<key>title</key>
+				<string>Search for Ruby Gems</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>965D6CE3-7007-4BBC-9E27-22CB258D9C5E</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>1F95186C-B884-4362-9728-0DFDAE890F51</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>1F95186C-B884-4362-9728-0DFDAE890F51</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>965D6CE3-7007-4BBC-9E27-22CB258D9C5E</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://smgt.me</string>
+</dict>
+</plist>
